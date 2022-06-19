@@ -1,6 +1,7 @@
 interface TaskItemProps {
   titulo: string;
   done?: boolean;
+  concluirTarefa: () => void;
 }
 
 export default function TaskItem(props: TaskItemProps) {
@@ -8,7 +9,7 @@ export default function TaskItem(props: TaskItemProps) {
     <li className={`task-item ${props.done ? "done" : ""}`}>
       <span>❌</span>
       <p>{ props.titulo }</p>
-      <span>✔️</span>
+      <span onClick={ props.concluirTarefa }>✔️</span>
     </li>
   );
 }
