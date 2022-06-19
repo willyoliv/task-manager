@@ -37,22 +37,3 @@ h1 {
   border-radius: 10px;
   list-style: none;
 }
-
-.task-item {
-  display: flex;
-  justify-content: space-between;
-  text-align: left;
-}
-
-.done {
-  text-decoration: line-through;
-  color: gray;
-}
-
-.done #check {
-  cursor: not-allowed;
-}
-
-.task-item span {
-  cursor: pointer;
-}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Botao from "./components/Botao";
 import TaskContainer from "./components/TaskContainer";
 import TaskItem from "./components/TaskItem";
 import "./styles/global.css";
@@ -43,13 +44,10 @@ function App() {
       <h1 className="m-5">📋 Task Manager</h1>
       <form id="new-task" onSubmit={adicionarTarefa}>
         <input type="text" name="" id="" value={tituloTarefa} onChange={ (event) => setTituloTarefa(event.target.value) } />
-        <button
-          id="btnAdd"
-          className="btn btn-primary"
-          type="submit"
-        >
-          add
-        </button>
+        <Botao
+          texto="Adicionar"
+          cor="success"
+        />
       </form>
       <TaskContainer>
         {tarefas.map((tarefa: Tarefa, posicao: number) => {
