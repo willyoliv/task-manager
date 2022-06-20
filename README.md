@@ -1,4 +1,4 @@
-# Gamagit ![badge](https://img.shields.io/github/languages/top/willyoliv/task-manager)
+# Task Manager ![badge](https://img.shields.io/github/languages/top/willyoliv/task-manager)
 Task Manager é um projeto básico feito em React usando Typescript para simular um ToDo list onde são cadastradas novas tarefas. Trata-se de um projeto realizado durante as aulas de React da semana bônus do programa Hiring Coders 03.
 
 ## Rodando o projeto
